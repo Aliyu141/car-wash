@@ -1,0 +1,357 @@
+ body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+header {
+  background-color: #3498db;
+  padding: 20px 0;
+  color: #fff;
+}
+
+h1 {
+  float: left;
+  margin: 0;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.navbar {
+  float: right;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+#menu-toggle{
+    display:none;
+}
+/* Media query for smaller screens*/
+@media only screen and (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    margin-left :250px;
+  }
+
+  .navbar {
+    display: none;
+    width: 100%;
+    text-align: center;
+    background-color: #2980b9;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
+
+  .navbar.active {
+    display: block;
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+.checkbox{
+    display:none;
+}
+#menu-toggle{
+    display:none;
+}
+#nav ul li {
+    display:block;
+}
+.navbar ul{
+    display:block;
+    
+}
+.h1{
+    font-size:16px;
+}
+
+  /* Toggle styling */
+  #menu-toggle:checked + .menu-icon + #navbar {
+    display: inline-block;
+    height: 100%;
+    width:100%;
+ #navbar li{}
+  }
+  #menu-icon{
+     
+  }
+
+  }    
+/*home section */
+.home-section {
+  background-image: url('bg-image2.jpg'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.home-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.home-content h2 {
+  font-size: 36px;
+}
+
+.home-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #fff;
+  color: #3498db;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2980b9;
+  color: #fff;
+}
+/* Add this to your existing CSS file or create a new one */
+
+.services-section {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.service {
+  max-width: 300px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.service:hover {
+  transform: scale(1.05);
+}
+
+.service img {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.service h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-size: 16px;
+  color: #555;
+}
+/* Add this to your existing CSS file or create a new one */
+
+.gallery-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+/* Add this to your existing CSS file or create a new one */
+
+.about-section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.team-member {
+  max-width: 300px;
+  margin: 20px;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.team-member p {
+  font-size: 16px;
+  color: #555;
+}
+/* Add this to your existing CSS file or create a new one */
+
+.contact-section {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #2980b9;
+}
+/* Add this to your existing CSS file or create a new one */
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-info,
+.footer-links,
+.footer-social {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+}
+
+.footer-info h3,
+.footer-links h3,
+.footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-info p {
+  font-size: 14px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer-social li {
+  margin-right: 10px;
+}
+
+.footer-social img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+}
